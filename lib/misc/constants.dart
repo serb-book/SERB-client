@@ -17,4 +17,4 @@ const GLOBAL_PADDING = 8.0;
 
 const BLACK = Color(0xFF222222);
 const WHITE = Color(0xFFeeeeee);
-
+const SERVER_BASEURL = "http://192.168.1.8:5000";

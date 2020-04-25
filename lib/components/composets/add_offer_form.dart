@@ -1,10 +1,10 @@
 import 'dart:io';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:serb/components/Button.dart';
 import 'package:serb/components/SERBInputDecoration.dart';
+import 'package:serb/misc/constants.dart';
 import 'package:serb/model/Book.dart';
 import 'package:serb/model/PhotoPathModel.dart';
 import 'package:serb/model/price.dart';
@@ -152,7 +152,7 @@ class _AddOffer extends State<AddOfferForm> {
                         content: Text("Uploading..."),
                       ));
                       await upload(
-                          "http://192.168.1.8:5000/",
+                          SERVER_BASEURL,
                           Provider.of<PhotoPathModel>(context, listen: false)
                               .path);
                       Scaffold.of(context)
